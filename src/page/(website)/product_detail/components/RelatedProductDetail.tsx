@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 import { GoArrowSwitch } from "react-icons/go";
 import { MdShare } from "react-icons/md";
 import { RiHeart3Line } from "react-icons/ri";
