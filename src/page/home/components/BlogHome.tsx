@@ -18,7 +18,7 @@ const NewsHome = () => {
             <div className="overflow-hidden cursor-pointer w-full h-[250px]">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-                src="/Rectangle 67.png"
+                src="../img/Rectangle 67.png"
                 alt="News Image 1"
               />
             </div>
@@ -53,7 +53,7 @@ const NewsHome = () => {
             <div className="overflow-hidden cursor-pointer w-full h-[250px]">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-                src="/Rectangle 68.png"
+                src="../img/Rectangle 68.png"
                 alt="News Image 2"
               />
             </div>
@@ -87,7 +87,7 @@ const NewsHome = () => {
             <div className="overflow-hidden cursor-pointer w-full h-[250px]">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-                src="/Rectangle 69.png"
+                src="../img/Rectangle 69.png"
                 alt="News Image 3"
               />
             </div>

@@ -1,33 +1,22 @@
-import React, { useState } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const TopProductDetail = () => {
-  const [value, setValue] = useState<string>("1");
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = e.target.value;
-
-    // Kiểm tra để chỉ cho phép nhập số (hoặc chuỗi rỗng)
-    if (newValue === "" || /^[0-9]*$/.test(newValue)) {
-      setValue(newValue);
-    }
-  };
   return (
     <section className=" flex w-full mb-16">
       {/* box ảnh */}
       <div className="flex w-full">
         {/* ảnh bé */}
         <div className="w-1/5">
-          <img className="mb-4" src="/Group 94.png" alt="" />
-          <img className="mb-4" src="/Group 96.png" alt="" />
-          <img className="mb-4" src="/Group 97.png" alt="" />
-          <img className="mb-4" src="/Group 98.png" alt="" />
+          <img className="mb-4" src="../img/Group 94.png" alt="" />
+          <img className="mb-4" src="../img/Group 96.png" alt="" />
+          <img className="mb-4" src="../img/Group 97.png" alt="" />
+          <img className="mb-4" src="../img/Group 98.png" alt="" />
         </div>
         {/* ảnh to */}
         <div className="w-4/5">
-          <img className="w-[515px] h-auto " src="/detail.svg" alt="" />
+          <img className="w-[515px] h-auto " src="../img/detail.svg" alt="" />
         </div>
       </div>
       {/* box infor */}
@@ -86,9 +75,7 @@ const TopProductDetail = () => {
             <div className="mr-9">
               <input
                 type="text" // Có thể là "text" hoặc "number"
-                value={value} // Gán giá trị từ state
                 className="w-10 text-center outline-none"
-                onChange={handleChange} // Cập nhật state khi người dùng nhập
               />
             </div>
             <div>

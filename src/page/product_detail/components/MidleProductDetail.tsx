@@ -38,12 +38,12 @@ const MidleProductDetail = () => {
       <div className="flex flex-col lg:flex-row justify-between space-y-4 lg:space-y-0 lg:space-x-8">
         <img
           className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform"
-          src="/Group 106.png"
+          src="../img/Group 106.png"
           alt="Group 106"
         />
         <img
           className="w-full rounded-lg shadow-lg hover:scale-105 transition-transform"
-          src="/Group 107.png"
+          src="../img/Group 107.png"
           alt="Group 107"
         />
       </div>
