@@ -45,7 +45,7 @@ const TopProductDetail = () => {
         <div className="mt-4 text-[#A3A3A3] ">
           <div className="mb-1">Size</div>
           <ul className="flex space-x-3 ">
-            <li className="bg-[#A3A3A3] py-5px px-3 rounded-5px text-[white] bg-[#CA8A04] hover:bg-[#CA8A04] cursor-pointer active:bg-[#CA8A04]">
+            <li className="bg-[#A3A3A3] py-5px px-3 rounded-5px text-[white] hover:bg-[#CA8A04] active:bg-[#CA8A04] cursor-pointer">
               L
             </li>
             <li className="bg-[#A3A3A3] py-5px px-3 rounded-5px text-[white] hover:bg-[#CA8A04] cursor-pointer active:bg-[#CA8A04]">
