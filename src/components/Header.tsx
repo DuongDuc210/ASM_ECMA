@@ -39,7 +39,7 @@ const Header = () => {
             </nav>
             <div className="flex justify-end space-x-4 text-2xl">
               <Link to="">
-                <img src="/user!.png" alt="User" className="w-6 h-6" />
+                <img src="../img/user!.png" alt="User" className="w-6 h-6" />
               </Link>
               <Link to="/search">
                 <AiOutlineSearch />
