@@ -61,8 +61,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full max-w-screen-xl mx-auto border-t border-gray-200">
-        <p className="text-center py-8 text-gray-500">
-          2023 furino. All rights reverved
+        <p className="text-left py-8 text-gray-500">
+          2023 furino. All rights reserved
         </p>
       </div>
     </footer>

@@ -60,7 +60,7 @@ const RelatedProductDetail = () => {
                 {/* Add to Cart button */}
                 <Link
                   to="shop/cart"
-                  className="bg-[#FFFFFF] text-[#CA8A04] font-medium py-3 px-12 rounded-full shadow-md] transition-all duration-300"
+                  className="bg-[#FFFFFF] text-[#CA8A04] font-medium py-3 px-12 rounded-full shadow-md transition-all duration-300"
                 >
                   Add to cart
                 </Link>
@@ -117,6 +117,13 @@ const RelatedProductDetail = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Show More Button */}
+      <div className="text-center mt-8">
+        <button className="w-[245px] h-[48px]  border-2 border-[#B88E2F] bg-white text-[#B88E2F] font-medium py-2 px-8 rounded-sm hover:bg-[#B88E2F] hover:text-white transition-all duration-300">
+          Show More
+        </button>
       </div>
     </section>
   );

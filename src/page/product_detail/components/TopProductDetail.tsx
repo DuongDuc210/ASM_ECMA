@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -19,15 +20,14 @@ const TopProductDetail = () => {
       <div className="flex w-full">
         {/* ảnh bé */}
         <div className="w-1/5">
-          <img className="mb-4" src=".././detail.svg" alt="" />
-          <img className="mb-4" src=".././detail.svg" alt="" />
-          <img className="mb-4" src=".././detail.svg" alt="" />
-          <img className="mb-4" src=".././detail.svg" alt="" />
-          <img className="mb-4" src=".././detail.svg" alt="" />
+          <img className="mb-4" src="/Group 94.png" alt="" />
+          <img className="mb-4" src="/Group 96.png" alt="" />
+          <img className="mb-4" src="/Group 97.png" alt="" />
+          <img className="mb-4" src="/Group 98.png" alt="" />
         </div>
         {/* ảnh to */}
         <div className="w-4/5">
-          <img className="w-[515px] h-auto " src=".././detail.svg" alt="" />
+          <img className="w-[515px] h-auto " src="/detail.svg" alt="" />
         </div>
       </div>
       {/* box infor */}
@@ -35,7 +35,7 @@ const TopProductDetail = () => {
         {/* name */}
         <h3 className="text-xl mb-2 font-medium">Asgaard sofa</h3>
         {/* price */}
-        <p className="text-40px font-bold text-[#EF4444] mb-2">25.000.000đ</p>
+        <p className="text-30px font-medium text-[#9F9F9F] mb-2">25.000.000đ</p>
         {/* rating */}
         <div className="flex items-center text-[#9F9F9F ">
           <div className="flex py-5px pr-4 text-[#FFC700] border-[#A3A3A3] border-r-2 ">
@@ -98,7 +98,7 @@ const TopProductDetail = () => {
 
           {/* button */}
           <Link to="/shop/cart">
-            <button className="border text-[#CA8A04] border-[#CA8A04] px-60px text-base font-medium rounded-5px py-10px hover:bg-[#CA8A04] hover:opacity-70 hover:text-[#ffffff]">
+            <button className="border border-[#A3A3A3] px-60px text-base font-medium rounded-5px py-10px">
               Add to cart
             </button>
           </Link>
@@ -109,10 +109,46 @@ const TopProductDetail = () => {
         {/* thông tin */}
         <div className="mt-8 border-t border-[#A3A3A3] text-[#a3a3a3] text-base">
           <p className="mt-3 text-base font-medium">SKU : SS001</p>
-          <p className="mt-3 text-base font-medium">Category: Sofa</p>
+          <p className="mt-3 text-base font-medium">Category: Sofas</p>
           <p className="mt-3 text-base font-medium">
             Tags: Sofa, Chair, Home, Shop
           </p>
+          {/* Phần chia sẻ */}
+          <div className="mt-3 flex items-center space-x-4">
+            <p className="text-base font-medium mb-0">Share:</p>{" "}
+            {/* Xóa margin-bottom */}
+            <div className="flex items-center space-x-4">
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                <FaFacebookF size={16} />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-700 transition-colors"
+              >
+                <FaInstagram size={16} />
+              </a>
+
+              {/* Twitter */}
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-600 transition-colors"
+              >
+                <FaTwitter size={16} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

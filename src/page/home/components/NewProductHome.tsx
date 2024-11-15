@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 import { GoArrowSwitch } from "react-icons/go";
 import { MdShare } from "react-icons/md";
 import { RiHeart3Line } from "react-icons/ri";
@@ -33,7 +33,7 @@ const NewProductHome = () => {
     <section className="font-poppins bg-[#F9F9F9] py-10">
       {/* Top */}
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 mb-8 border-b border-gray-300">
-        <h2 className="text-4xl font-semibold text-[#262626]">New</h2>
+        <h2 className="text-4xl font-semimedium text-[#262626]">New</h2>
       </div>
 
       {/* Products */}
@@ -45,6 +45,23 @@ const NewProductHome = () => {
           >
             {/* Image */}
             <div className="relative">
+              {/* Badge logic */}
+              {index === 0 && (
+                <div className="absolute top-2 right-2 bg-[#E97171] text-white text-sm font-medium w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                  -30%
+                </div>
+              )}
+              {index === 2 && (
+                <div className="absolute top-2 right-2 bg-[#E97171] text-white text-sm font-medium w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                  -50%
+                </div>
+              )}
+              {index === 3 && (
+                <div className="absolute top-2 right-2 bg-[#2EC1AC] text-white text-sm font-medium w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                  New
+                </div>
+              )}
+
               <Link to={`/shop/product_detail`}>
                 <img
                   className="w-full h-64 object-cover transition-opacity duration-300 group-hover:opacity-80"
@@ -57,7 +74,7 @@ const NewProductHome = () => {
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {/* Add to Cart button */}
                 <Link
-                  to="shop/cart"
+                  to="#"
                   className="bg-[#FFFFFF] text-[#CA8A04] font-medium py-3 px-12 rounded-full shadow-md] transition-all duration-300"
                 >
                   Add to cart
