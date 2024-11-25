@@ -74,7 +74,7 @@ const NewProductHome = () => {
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {/* Add to Cart button */}
                 <Link
-                  to="#"
+                  to="/shop/cart"
                   className="bg-[#FFFFFF] text-[#CA8A04] font-medium py-3 px-12 rounded-full shadow-md] transition-all duration-300"
                 >
                   Add to cart

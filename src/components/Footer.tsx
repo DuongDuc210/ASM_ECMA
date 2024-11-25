@@ -7,8 +7,9 @@ const Footer = () => {
             <img src="/logo_2.svg" alt="Logo" className="h-12" />
           </div>
           <p className="text-sm text-gray-600">
-            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            400 University Drive Suite 200 Coral Gables,
           </p>
+          <p className="text-sm text-gray-600">FL 33134 USA</p>
         </div>
 
         <div className="flex flex-col">
