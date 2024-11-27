@@ -37,7 +37,7 @@ const NewProductHome = () => {
       name: "Lolito",
       description: "Luxury big sofa",
       price: "14.000.000đ",
-      image: "/img/Images 3.png",
+      image: "/img/images 3.png",
       category: "Furniture",
     },
     {
