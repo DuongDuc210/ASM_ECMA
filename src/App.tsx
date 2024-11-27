@@ -3,8 +3,8 @@ import "./App.css";
 import HomePage from "./page/home/page";
 import LayoutWebsite from "./page/layout";
 import Product_Detail from "./page/product_detail/page";
-import CartPage from "./page/cart/page";
-import CheckoutPage from "./page/checkout/page";
+import CartPage from "./page/cart/cart";
+import CheckoutPage from "./page/checkout/checkout";
 
 function App() {
   return (
