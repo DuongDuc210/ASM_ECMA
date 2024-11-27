@@ -4,7 +4,7 @@ const Support = () => {
       <div className="max-w-[1280px] h-auto flex justify-between items-center mx-auto pt-16 pb-60px">
         <div className="flex items-center">
           <div>
-            <img src="/public/img/trophy 1.png" alt="" />
+            <img src="/img/trophy 1.png" alt="" />
           </div>
           <div className="ml-4">
             <h3 className="mb-1 text-xl font-semibold text-[#171717]">
@@ -17,7 +17,7 @@ const Support = () => {
         </div>
         <div className="flex items-center">
           <div>
-            <img src="/public/img/guarantee.png" alt="" />
+            <img src="/img/guarantee.png" alt="" />
           </div>
           <div className="ml-4">
             <h3 className="mb-1 text-xl font-semibold text-[#171717]">
@@ -28,7 +28,7 @@ const Support = () => {
         </div>
         <div className="flex items-center">
           <div>
-            <img src="/public/img/shipping.png" alt="" />
+            <img src="/img/shipping.png" alt="" />
           </div>
           <div className="ml-4">
             <h3 className="mb-1 text-xl font-semibold text-[#171717]">
@@ -39,7 +39,7 @@ const Support = () => {
         </div>
         <div className="flex items-center">
           <div>
-            <img src="/public/img/customer-support.png" alt="" />
+            <img src="/img/customer-support.png" alt="" />
           </div>
           <div className="ml-4">
             <h3 className="mb-1 text-xl font-semibold text-[#171717]">
