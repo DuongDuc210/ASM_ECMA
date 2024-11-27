@@ -21,7 +21,7 @@ const CartPage = () => {
             <tbody className="text-base font-medium text-[#A3A3A3]">
               <tr className="flex items-center text-center justify-between p-4">
                 <td className="w-2/6 flex items-center">
-                  <img src="/public/img/Group 146.png" alt="" />
+                  <img src="/img/Group 146.png" alt="" />
                   <span className="ml-4">Asgaard sofa</span>
                 </td>
                 <td className="w-1/6 text-center">25.000.000đ</td>
