@@ -3,7 +3,7 @@ const Banner = () => {
     <div className="relative mb-16 w-full">
       {/* Hình ảnh banner, sử dụng object-cover để ảnh luôn đầy đủ màn hình */}
       <img
-        src="/public/img/banner.png"
+        src="/img/banner.png"
         alt="Banner"
         className="w-full h-[500px] object-cover"
       />

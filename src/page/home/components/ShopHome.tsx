@@ -12,28 +12,28 @@ const GalleryHome = () => {
         <div className="overflow-hidden cursor-pointer">
           <img
             className="transition-transform duration-500 ease-in-out transform hover:scale-110 w-full h-full object-cover"
-            src="/public/img/Rectangle 63.png"
+            src="/img/Rectangle 63.png"
             alt="Image 1"
           />
         </div>
         <div className="overflow-hidden cursor-pointer">
           <img
             className="transition-transform duration-500 ease-in-out transform hover:scale-110 w-full h-full object-cover"
-            src="/public/img/Rectangle 64.png"
+            src="/img/Rectangle 64.png"
             alt="Image 2"
           />
         </div>
         <div className="overflow-hidden cursor-pointer">
           <img
             className="transition-transform duration-500 ease-in-out transform hover:scale-110 w-full h-full object-cover"
-            src="/public/img/Rectangle 65.png"
+            src="/img/Rectangle 65.png"
             alt="Image 3"
           />
         </div>
         <div className="overflow-hidden cursor-pointer">
           <img
             className="transition-transform duration-500 ease-in-out transform hover:scale-110 w-full h-full object-cover"
-            src="/public/img/Rectangle 66.png"
+            src="/img/Rectangle 66.png"
             alt="Image 4"
           />
         </div>
