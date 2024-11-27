@@ -21,7 +21,7 @@ const NewProductHome = () => {
       name: "Syltherine",
       description: "Stylish cafe chair",
       price: "3.500.000đ",
-      image: "/public/img/Images 1.png",
+      image: "/img/Images 1.png",
       category: "Furniture",
     },
     {
@@ -29,7 +29,7 @@ const NewProductHome = () => {
       name: "Leviosa",
       description: "Stylish cafe chair",
       price: "2.500.000đ",
-      image: "/public/img/Images 2.png",
+      image: "/img/Images 2.png",
       category: "Furniture",
     },
     {
@@ -37,7 +37,7 @@ const NewProductHome = () => {
       name: "Lolito",
       description: "Luxury big sofa",
       price: "14.000.000đ",
-      image: "/public/img/Images 3.png",
+      image: "/img/Images 3.png",
       category: "Furniture",
     },
     {
@@ -45,7 +45,7 @@ const NewProductHome = () => {
       name: "Respira",
       description: "Outdoor bar table and stool",
       price: "5.000.000đ",
-      image: "/public/img/Images 4.png",
+      image: "/img/Images 4.png",
       category: "Outdoor",
     },
   ];
