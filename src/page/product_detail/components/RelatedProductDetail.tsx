@@ -21,8 +21,8 @@ const RelatedProductDetail = () => {
   useEffect(() => {
     axios
       .get("http://localhost:3000/products")
-      .then((response) => {
-        setProducts(response.data);
+      .then((res) => {
+        setProducts(res.data);
       })
       .catch((error) => {
         console.error("Error fetching products:", error);
