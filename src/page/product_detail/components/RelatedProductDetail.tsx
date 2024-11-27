@@ -1,5 +1,3 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import { GoArrowSwitch } from "react-icons/go";
 import { MdShare } from "react-icons/md";
 import { RiHeart3Line } from "react-icons/ri";
@@ -10,25 +8,43 @@ interface Product {
   id: number;
   name: string;
   image: string;
-  category: string;
-  price: string;
   description: string;
+  price: string;
 }
 
+// Hardcoded products from db.json
+const products: Product[] = [
+  {
+    id: 1,
+    name: "Syltherine",
+    description: "Stylish cafe chair",
+    price: "3.500.000đ",
+    image: "/public/img/Images 1.png",
+  },
+  {
+    id: 2,
+    name: "Leviosa",
+    description: "Stylish cafe chair",
+    price: "2.500.000đ",
+    image: "/public/img/Images 2.png",
+  },
+  {
+    id: 3,
+    name: "Lolito",
+    description: "Luxury big sofa",
+    price: "14.000.000đ",
+    image: "/public/img/images 3.png",
+  },
+  {
+    id: 4,
+    name: "Respira",
+    description: "Outdoor bar table and stool",
+    price: "5.000.000đ",
+    image: "/public/img/Images 4.png",
+  },
+];
+
 const RelatedProductDetail = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/products")
-      .then((res) => {
-        setProducts(res.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-      });
-  }, []);
-
   return (
     <section className="font-poppins bg-[#F9F9F9] py-10">
       {/* Top */}
@@ -40,7 +56,7 @@ const RelatedProductDetail = () => {
 
       {/* Products */}
       <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
-        {products.map((product, index) => (
+        {products.map((product) => (
           <div
             key={product.id}
             className="group relative rounded-lg shadow-lg bg-white overflow-hidden transition-all transform hover:scale-105"
@@ -91,27 +107,12 @@ const RelatedProductDetail = () => {
                   {product.name}
                 </h3>
               </Link>
-              <h5 className="text-base text-[#898989] pb-2">
-                {product.category}
-              </h5>
               <p className="text-sm text-[#898989] pb-3">
                 {product.description}
               </p>
 
               {/* Price */}
-              <p
-                className={`font-medium text-xl ${
-                  index === 0
-                    ? "line-through text-[#B0B0B0]"
-                    : index === 1
-                    ? "text-[#3A3A3A]"
-                    : index === 2
-                    ? "line-through text-[#B0B0B0]"
-                    : index === 3
-                    ? "text-[#3A3A3A]"
-                    : "text-[#EF4444]"
-                }`}
-              >
+              <p className="font-medium text-xl text-[#3A3A3A]">
                 {product.price}
               </p>
             </div>
@@ -121,7 +122,7 @@ const RelatedProductDetail = () => {
 
       {/* Show More Button */}
       <div className="text-center mt-8">
-        <button className="w-[245px] h-[48px]  border-2 border-[#B88E2F] bg-white text-[#B88E2F] font-medium py-2 px-8 rounded-sm hover:bg-[#B88E2F] hover:text-white transition-all duration-300">
+        <button className="w-[245px] h-[48px] border-2 border-[#B88E2F] bg-white text-[#B88E2F] font-medium py-2 px-8 rounded-sm hover:bg-[#B88E2F] hover:text-white transition-all duration-300">
           Show More
         </button>
       </div>
