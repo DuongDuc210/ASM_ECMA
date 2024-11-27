@@ -1,5 +1,3 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import { GoArrowSwitch } from "react-icons/go";
 import { MdShare } from "react-icons/md";
 import { RiHeart3Line } from "react-icons/ri";
@@ -16,18 +14,41 @@ interface Product {
 }
 
 const NewProductHome = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/products")
-      .then((response) => {
-        setProducts(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-      });
-  }, []);
+  // Hard-code the product data
+  const products: Product[] = [
+    {
+      id: 1,
+      name: "Syltherine",
+      description: "Stylish cafe chair",
+      price: "3.500.000đ",
+      image: "/public/img/Images 1.png",
+      category: "Furniture",
+    },
+    {
+      id: 2,
+      name: "Leviosa",
+      description: "Stylish cafe chair",
+      price: "2.500.000đ",
+      image: "/public/img/Images 2.png",
+      category: "Furniture",
+    },
+    {
+      id: 3,
+      name: "Lolito",
+      description: "Luxury big sofa",
+      price: "14.000.000đ",
+      image: "/public/img/Images 3.png",
+      category: "Furniture",
+    },
+    {
+      id: 4,
+      name: "Respira",
+      description: "Outdoor bar table and stool",
+      price: "5.000.000đ",
+      image: "/public/img/Images 4.png",
+      category: "Outdoor",
+    },
+  ];
 
   return (
     <section className="font-poppins bg-[#F9F9F9] py-10">
@@ -75,7 +96,7 @@ const NewProductHome = () => {
                 {/* Add to Cart button */}
                 <Link
                   to="/shop/cart"
-                  className="bg-[#FFFFFF] text-[#CA8A04] font-medium py-3 px-12 rounded-full shadow-md] transition-all duration-300"
+                  className="bg-[#FFFFFF] text-[#CA8A04] font-medium py-3 px-12 rounded-full shadow-md transition-all duration-300"
                 >
                   Add to cart
                 </Link>
