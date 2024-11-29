@@ -3,9 +3,7 @@ const GalleryHome = () => {
     <section>
       {/* Top */}
       <div className="max-w-[1280px] h-auto flex justify-between items-center px-1 mb-4 mx-auto">
-        <h2 className="text-4xl text-[#262626] font-semibold border-b border-gray-300">
-          Shop
-        </h2>
+        <h2 className="text-4xl text-[#262626] font-semibold py-5">SHOP</h2>
       </div>
       {/* Gallery product */}
       <div className="max-w-[1280px] grid grid-cols-2 gap-2 mx-auto mb-16">

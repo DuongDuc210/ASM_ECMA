@@ -51,10 +51,10 @@ const NewProductHome = () => {
   ];
 
   return (
-    <section className="font-poppins bg-[#F9F9F9] py-10">
+    <section className="font-poppins bg-[#F9F9F9] py-0">
       {/* Top */}
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 mb-8 border-b border-gray-300">
-        <h2 className="text-4xl font-semimedium text-[#262626]">New</h2>
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 mb-8">
+        <h2 className="text-4xl font-semibold text-[#262626]">NEW</h2>
       </div>
 
       {/* Products */}
